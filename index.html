@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mundo dos Conjuntos</title>
+  <!-- Bibliotecas -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="animate__animated animate__fadeInDown">🌸Mundo dos Conjuntos🌸</h1>
+
+  <img src="img/hatenna.png" alt="Hatenna" width="150">
+
+  <div id="inicio" class="animate__animated animate__fadeIn">
+    <button class="btn" onclick="mostrarProximaFase()">JOGAR</button>
+  </div>
+
+  <div id="status">
+    <div class="question-counter" id="question-counter"></div>
+    <div class="timer" id="timer"></div>
+  </div>
+
+  <div class="content animate__animated animate__bounceIn" id="fase1">
+    <h2>🌟 Fase 1: Definição de Conjuntos 🌟</h2>
+    <p>Um conjunto é uma coleção de elementos distintos. Ex: A = {a, e, i, o, u}</p>
+    <p>Qual das opções abaixo representa corretamente um conjunto?</p>
+    <div class="opcoes" id="opcoes1"></div>
+  </div>
+
+  <div class="content animate__animated animate__bounceIn" id="fase2">
+    <h2>🌈 Fase 2: União 🌈</h2>
+    <p>A união de conjuntos junta todos os elementos, sem repetir.</p>
+    <p>Se A = {a, b, c} e B = {b, c, d}, qual é A ∪ B?</p>
+    <div class="opcoes" id="opcoes2"></div>
+  </div>
+
+  <div class="content animate__animated animate__bounceIn" id="fase3">
+    <h2>🍃 Fase 3: Interseção 🍃</h2>
+    <p>A interseção mostra os elementos comuns entre conjuntos.</p>
+    <p>Se A = {x, y, z} e B = {w, x, z}, qual é A ∩ B?</p>
+    <div class="opcoes" id="opcoes3"></div>
+  </div>
+
+  <div class="content animate__animated animate__bounceIn" id="fase4">
+    <h2>🧚‍♀️ Fase 4: Complemento 🧚‍♀️</h2>
+    <p>O complemento de A em relação a U (universo) são os elementos de U que não estão em A.</p>
+    <p>Se U = {1,2,3,4,5} e A = {2,4}, qual é o complemento de A?</p>
+    <div class="opcoes" id="opcoes4"></div>
+  </div>
+
+  <div class="content animate__animated animate__bounceIn" id="fase5">
+    <h2>🦄 Fase 5: Subconjuntos 🦄</h2>
+    <p>Um conjunto B é subconjunto de A se todos os elementos de B estão em A.</p>
+    <p>Se A = {1, 2, 3}, qual dos conjuntos abaixo é um subconjunto de A?</p>
+    <div class="opcoes" id="opcoes5"></div>
+  </div>
+
+  <div class="content animate__animated animate__bounceIn" id="fase6">
+    <h2>🧩 Fase 6: Diferença 🧩</h2>
+    <p>A diferença A - B contém os elementos de A que não estão em B.</p>
+    <p>Se A = {1,2,3,4} e B = {2,4}, qual é A - B?</p>
+    <div class="opcoes" id="opcoes6"></div>
+  </div>
+
+  <div class="content animate__animated animate__bounceIn" id="fase7">
+    <h2>⚡ Fase 7: Diferença Simétrica ⚡</h2>
+    <p>A diferença simétrica A △ B são os elementos que estão em A ou B, mas não em ambos.</p>
+    <p>Se A = {1,2,3} e B = {2,3,4}, qual é A △ B?</p>
+    <div class="opcoes" id="opcoes7"></div>
+  </div>
+
+  <div class="content animate__animated animate__bounceIn" id="fase8">
+    <h2>💡 Fase 8: Conjunto das Partes 💡</h2>
+    <p>O conjunto das partes (𝒫) de um conjunto é o conjunto de todos os subconjuntos possíveis.</p>
+    <p>Qual é o conjunto das partes de A = {1, 2}?</p>
+    <div class="opcoes" id="opcoes8"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
